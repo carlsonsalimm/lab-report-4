@@ -1,9 +1,9 @@
-**This is a demo to github**
+**This is a demo to github**<br/>
 
-Step 1: **Looking up an account**  
-You need to look up your course specific account for CSE 15L:  
-Link to get there -> [Link](https://sdacs.ucsd.edu/~icc/index.php)  
-![Image](ss 2.png)  
+Step 1: **Looking up an account**<br/>
+You need to look up your course specific account for CSE 15L:<br/>
+Link to get there -> [Link](https://sdacs.ucsd.edu/~icc/index.php)<br/>
+![Image](ss 2.png)<br/>
 
 Change your password and wait for 15 minutes until you can use the password.
 
