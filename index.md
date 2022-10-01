@@ -1,9 +1,5 @@
 **This is a demo to github**
 
-Link for Markdown Refrence -> [Link](https://commonmark.org/help/)
-
-![Image](shutterstock_1375463840.width-800.png)
-
 Step 1: **Looking up an account**
 You need to look up your course specific account for CSE 15L:
 Link to get there -> [Link](https://commonmark.org/help/](https://sdacs.ucsd.edu/~icc/index.php)
