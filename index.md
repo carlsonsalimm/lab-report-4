@@ -35,13 +35,21 @@ You are now connected remotely! Let's try some commands such as cd, ls, and pwd.
 
 **Step 5: Moving files with scp**
 Here's the code for the WhereAmI.java:
+
 ```class WhereAmI {
+
     public static void main(String[] args) {
+    
       System.out.println(System.getProperty("os.name"));
+      
       System.out.println(System.getProperty("user.name"));
+      
       System.out.println(System.getProperty("user.home"));
+      
       System.out.println(System.getProperty("user.dir"));
+      
     }
+    
   }
 ```
 Let's try to move files from your computer remotely! We will be using the scp command. We are trying to move a file called WhereAmI.java.
