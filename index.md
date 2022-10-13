@@ -34,6 +34,7 @@ You are now connected remotely! Let's try some commands such as cd, ls, and pwd.
 ![Image](ss 5.png)
 
 **Step 5: Moving files with scp**
+
 Here's the code for the WhereAmI.java:
 
 ![Image](ss 10.png)
