@@ -55,7 +55,7 @@ Type in ```scp WhereAmI.java cs15lfa22me@ieng6.ucsd.edu:~/``` where cs15lfa22me 
 
 ![Image](ss 7.png)
 
-Log back in and try running the folder!
+Log back in and try running the folder.
 
 ![Image](ss 8.png)
 
