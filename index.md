@@ -1,5 +1,6 @@
 **Lab Report 1**
 
+
 **Step 1: Looking up an account**
 You need to look up your course specific account for CSE 15L:
 Link to get there -> [Link](https://sdacs.ucsd.edu/~icc/index.php)
