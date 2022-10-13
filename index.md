@@ -1,4 +1,4 @@
-**This is a demo to github**<br/>
+**Lab Report 1**<br/>
 
 Step 1: **Looking up an account**
 You need to look up your course specific account for CSE 15L:
