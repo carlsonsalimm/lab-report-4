@@ -1,13 +1,13 @@
-**Lab Report 1**<br/>
+**Lab Report 1**
 
-Step 1: **Looking up an account**
+**Step 1: Looking up an account**
 You need to look up your course specific account for CSE 15L:
 Link to get there -> [Link](https://sdacs.ucsd.edu/~icc/index.php)
 ![Image](ss 2.png)
 
 Change your password and wait for 15 minutes until you can use the password.
 
-Step 2: **Installing VScode**
+**Step 2: Installing VScode**
 
 Install Visual studio code.
 
@@ -15,7 +15,7 @@ Link to get there -> [Link](https://code.visualstudio.com/)
 
 Follow the instructions in the website on how to download vs code.
 
-Step 3: **Remotely Connecting**
+**Step 3: Remotely Connecting**
 
 Open VScode and open the terminal. Type in ```ssh cs15lfa22me@ieng6.ucsd.edu``` where cs15lfa22me should be your account name. The two last letters should be different for each student so be careful when typing it.
 
@@ -26,13 +26,14 @@ Type yes, and enter your password. Once you are connected your terminal should l
 ![Image](ss 4.png)
 
 Remote connecting is the ability to access a computer or network through a network connection. Remote connecting is important because many courses in CSE use course-specific accounts and you might use this in the future!
-Step 4: **Trying Some Commands**
+
+**Step 4: Trying Some Commands**
 
 You are now connected remotely! Let's try some commands such as cd, ls, and pwd.
 
 ![Image](ss 5.png)
 
-Step 5: **Moving files with scp**
+**Step 5: Moving files with scp**
 Here's the code for the WhereAmI.java:
 ```class WhereAmI {
     public static void main(String[] args) {
@@ -60,7 +61,7 @@ Log back in and try running the folder!
 
 Notice that the output is different because its running in the remote computer.
 
-Step 6: **Setting an SSH Key**
+**Step 6: Setting an SSH Key**
 
 It becomes troublesome if you need to retype your password everytime you ```ssh``` or ```scp``` so here's a way to skip that part!
 Type in ```ssh-keygen``` to create a public and private key. You will store the public key in the remote computer and the private key in your client.
@@ -71,7 +72,7 @@ Log in to your remote computer and type ```mkdir .ssh``` to store the public key
 ```scp /Users/carls/.ssh/id_rsa.pub cs15lfa22me@ieng6.ucsd.edu:~/.ssh/authorized_keys```
 Enter your password and everything is set up!
 
-Step 7: **Optimizing Remote Running**
+**Step 7: Optimizing Remote Running**
 
 You can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit.
 
