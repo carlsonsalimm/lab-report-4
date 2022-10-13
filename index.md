@@ -36,7 +36,8 @@ You are now connected remotely! Let's try some commands such as cd, ls, and pwd.
 **Step 5: Moving files with scp**
 Here's the code for the WhereAmI.java:
 
-```class WhereAmI {
+```
+class WhereAmI {
 
     public static void main(String[] args) {
     
