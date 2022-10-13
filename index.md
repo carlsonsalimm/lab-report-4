@@ -64,12 +64,18 @@ Notice that the output is different because its running in the remote computer.
 **Step 6: Setting an SSH Key**
 
 It becomes troublesome if you need to retype your password everytime you ```ssh``` or ```scp``` so here's a way to skip that part!
+
 Type in ```ssh-keygen``` to create a public and private key. You will store the public key in the remote computer and the private key in your client.
+
 ![Image](ss 9.png)
+
 Note: When given the prompt *Enter file in which to save the key (/Users/carls/.ssh/id_rsa.pub):* press enter again to specify the default path and take note of it. In this case, the default path is /Users/carls/.ssh/id_rsa.pub.
 
-Log in to your remote computer and type ```mkdir .ssh``` to store the public key. Logout from the remote computer and type in 
+Log in to your remote computer and type ```mkdir .ssh``` to store the public key. 
+
+Log out from the remote computer and type in 
 ```scp /Users/carls/.ssh/id_rsa.pub cs15lfa22me@ieng6.ucsd.edu:~/.ssh/authorized_keys```
+
 Enter your password and everything is set up!
 
 **Step 7: Optimizing Remote Running**
