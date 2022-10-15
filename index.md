@@ -82,3 +82,73 @@ Example: ```ssh cs15lfa22@ieng6.ucsd.edu "pwd"``` will display the current direc
 
 Typing the up-arrow in your keyboard can recall your previous commands in the terminal.
 
+
+**Lab Report 2**
+
+**Part 1**
+
+```
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    int num = 0;
+    String s1="";
+    public String handleRequest(URI url) {
+     
+        if (url.getPath().equals("/")) {
+            return s1;
+        } else if (url.getPath().contains("/add")) {
+            String[] parameters = url.getQuery().split("=");
+            s1 = s1+" "+parameters[1];
+            return parameters[1];
+        } else if (url.getPath().contains("/search")){
+            return s1;
+        }
+    return "404 Not Found!";
+    }
+}
+```
+
+![Image](lab 3 part 1 ss 1.png)
+
+handleRequest Method will be called and the first else if statement will run. We will store the string after the "=" sign and store it in s1. If the string is changed, s1 will store a different string.
+
+![Image](lab 3 part 1 ss 2.png)
+
+This runs the same method as above but we store a different string "apple" in s1.
+
+![Image](lab 3 part 1 ss 3.png)
+handleRequest method is called, and the second else if statement will run. We will show the values in s1. The values in s1 was stored using the first else if statement.
+
+**Part 2**
+
+**ArrayExamples.java**
+
+![Image](lab 3 ss 1.png)
+
+The failure inducing input is {3,4} and {1,2}. Below is the failing test output
+
+![Image](lab 3 ss 2.png)
+
+![Image](lab 3 ss 3.png)
+
+The failure inducing input for this function is {2,2,3,4} because the method assumes that there are 1 lowest value so they divide by 3 elements for the mean, which would cause failure output.
+
+Here are the changes to the bug which made all of them work:
+
+![Image](lab 3 ss 4.png)
+
+The bug that causes the first function's symptom is because it subtracts 1 in each iterations which would skip some numbers. For the second function, the code is copying an empty array to the original array which makes it all 0. For the third bug, we need to count how many lowest values are there and subtract it to the array length at the return call.
+
+**ListExamples.java**
+
+Failure inducing input for the filter method {apple,APPLE,PINEAPPLE}, and the failure inducing input for the merge method is l1 = {apple} and l2 = {banana, cilantro, diamond}.
+
+![Image](lab 3 ss 5.png)
+
+The symptom for filter method is as above, the list returned is {PINEAPPLE,APPLE) while expected is {APPLE,PINEAPPLE}. The symptom for merge method is that there is a OutOfMemoryError. 
+
+Here are the changes to the bug which made all of them work:
+![Image](lab 3 ss 6.png)
+
+The bug that causes the filter function is because it adds the checked list to index 0, which makes the list in reverse order. For the merge method, on the last while, index1 should be index2. The code made it that index2 will not be incremented so list2 will be added incorrectly.
