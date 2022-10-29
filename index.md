@@ -160,5 +160,5 @@ The code should have been index2+=1. For this input, on the first while loop app
 
 Here is the change:
 
-![Image](lab ss 11.png)
+![Image](lab 3 ss 11.png)
 
