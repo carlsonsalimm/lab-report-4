@@ -139,7 +139,9 @@ The failure inducing input for this function is {2,2,3,4}. because the method as
 
 
 **ListExamples.java**
+
 Here are the code with bugs:
+
 ![Image](lab 3 ss 10.png)
 
 ![Image](lab 3 ss 5.png)
