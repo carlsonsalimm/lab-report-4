@@ -162,6 +162,7 @@ Here is the change:
 
 ![Image](lab 3 ss 11.png)
 
+
 **Lab Report 3**
 
 We will be exploring the grep command and 3 alternative ways to use grep with 3 example. We will use ```-v``` ```-w``` ```-i```.
